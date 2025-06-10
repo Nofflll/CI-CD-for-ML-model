@@ -1,0 +1,17 @@
+# Parameters for the project
+# This file will be tracked by DVC
+
+base:
+  project: "CI/CD for ML model"
+  random_state: 42
+
+data_load:
+  # No parameters for now
+  
+data_split:
+  test_size: 0.2
+
+train:
+  # Example for RandomForestClassifier
+  n_estimators: 100
+  max_depth: 10
