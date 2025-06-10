@@ -106,8 +106,10 @@ dmypy.json
 .pyre/
 
 # Data and models
-data/
-models/
+data/*
+!data/*.dvc
+models/*
+!models/*.dvc
 *.pkl
 mlruns/
 
