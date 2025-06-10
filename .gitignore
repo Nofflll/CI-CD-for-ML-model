@@ -110,7 +110,9 @@ data/
 models/
 *.pkl
 *.dvc
+mlruns/
 
 # DVC
-.dvc/
+.dvc/cache
+.dvc/tmp
 .dvcignore
