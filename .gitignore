@@ -113,6 +113,7 @@ models/
 mlruns/
 
 # DVC
+!.dvc/
 .dvc/cache
 .dvc/tmp
 .dvcignore
