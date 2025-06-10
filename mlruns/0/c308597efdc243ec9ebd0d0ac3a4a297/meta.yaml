@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/dainetto/Projects/Mine/CI%3ACD%20for%20ML%20model/mlruns/0/c308597efdc243ec9ebd0d0ac3a4a297/artifacts
+end_time: 1749540144564
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c308597efdc243ec9ebd0d0ac3a4a297
+run_name: nimble-seal-765
+run_uuid: c308597efdc243ec9ebd0d0ac3a4a297
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749540142357
+status: 3
+tags: []
+user_id: dainetto
