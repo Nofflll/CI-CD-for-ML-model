@@ -47,10 +47,21 @@ jobs:
         uses: iterative/setup-dvc@v1
 
       # Re-creating data and model as we don't have DVC remote storage yet
-      - name: Install dependencies for data generation
-        run: pip install pandas requests
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+          
+      - name: Install all dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      
       - name: Download data
         run: python3 src/get_data.py --output_folder data/raw
+        
+      - name: Train model to generate artifact
+        run: python3 src/train.py --config params.yaml
 
       # Log in to Docker Hub
       - name: Login to Docker Hub
