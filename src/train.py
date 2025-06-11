@@ -40,6 +40,9 @@ def train_model(config_path):
         logging.info(f"Loading data from {data_path}...")
         df = pd.read_csv(data_path, sep=';')
 
+        # Standardize column names (replace spaces with underscores)
+        df.columns = [col.replace(' ', '_') for col in df.columns]
+
         # Create target variable
         df['quality_label'] = (df['quality'] >= 7).astype(int)
         df = df.drop('quality', axis=1)
